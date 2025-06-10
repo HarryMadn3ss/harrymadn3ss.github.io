@@ -32,7 +32,7 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="index.html">Advanced AI</a></li>
+								<li><a href="AdvancedAI.html">Advanced AI</a></li>
 								<li><a href="Tools.html">Tools Development</a></li>
 								<li><a href="MonogameNetworking.html">Monogame Networking Project</a></li>
 								<li><a href="DirectX11Graphics.html">DirectX 11 Graphics Project</a></li>
@@ -48,7 +48,7 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">							
-							<h2>Monogame Networking Project</h2>
+							<h2>Advanced AI</h2>
 							<p></p>
 						</div>
 					</section>
@@ -59,7 +59,7 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="images/networking/demo.mp4" target="_blank" class="image"><video src="images/networking/demo.mp4" controls width="100%" alt="Gif of Final Graphics Project" ></video></a>
+									<a href="images/AdvancedAi/Splash.png" target="_blank" class="image"><img src="images/AdvancedAi/Splash.png"  alt="Gif of Final Graphics Project" /></video></a>
 									<div class="content">
 										<h2 class="major">Overview</h2>
 										<p>Advanced AI involved exploring concepts and implementation that could elevate how believable an agent is. This project contained three major sections Chess AI, Squad Behaviour and Goal Oriented Action Planning. 
@@ -75,7 +75,7 @@
 												
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="images/AdvancedAi/chess.mp4" target="_blank" class="image"><img src="images/AdvancedAi/chess.mp4" alt="Video of Chess AI" /></a>
+									<a href="images/AdvancedAi/chess.mp4" target="_blank" class="image"><video src="images/AdvancedAi/chess.mp4" controls width="100%" alt="Video of Chess AI" ></a>
 									<div class="content">
 										<h2 class="major">Rules of the Game</h2>
 										<p>Chess AI involved a lot of research, identify areas that could be improved upon or scored to make the AI more intelligent. This involve Scoring the board position for each piece, the number of moves the piece could make, number of attacks the piece can make and the global score of whenever a piece is taken. This accompanied with the minmax algorithm, and playbooks the AI opponent is able to look for the best move considering the future possible moves.</p>										
@@ -88,7 +88,7 @@
 						
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="images/" target="_blank" class="image"><img src="images/" alt="Video of Zombies searching for the player with gunshots alerting the zombies" /></a>
+									<a href="images/AdvancedAi/Zombies.mp4" target="_blank" class="image"><video src="images/AdvancedAi/Zombies.mp4" controls width="100%" alt="Video of Zombies searching for the player with gunshots alerting the zombies" ></a>
 									<div class="content">
 										<h2 class="major">Working Together</h2>
 										<p>Squad Behaviour was about creating a seemingly interconnected agents that would response to different events. using MARPO (Movement, Avoidance, Routing, Planning and Orders) I created two stacks an idle stack that contained the behaviour for the wandering state, mimicking hunting for the player, and the reactive stack which would always be checked first. The reactive stack will be empty until a behaviour is added for this example there is a ‘spotter’ zombie and three ‘hunter’ zombies, the spotter can see the player from further away and ‘scream’ to alert the other zombies to the last known location of the player, the other way is the zombie sees the player themselves.</p>
@@ -99,7 +99,7 @@
 							
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="images/" target="_blank" class="image"><img src="images/" alt="Video of Agents Harvesting Materials to Bulid Houses" /></a>
+									<a href="images/AdvancedAi/forester.mp4" target="_blank" class="image"><video src="images/AdvancedAi/forester.mp4" controls width="100%" alt="Video of Agents Harvesting Materials to Bulid Houses" ></a>
 									<div class="content">
 										<h2 class="major">Future Planning</h2>
 										<p>GOAP involved creating plans that the agent could execute if the requirements are met. This could be building a house but if the agent doesn’t currently have any wood, then the next step of the plan is looked at which obtains the wood needed. It’s important to note that the plan looks at the final task first and works backwards until a task can be completed. However, this approach can be quite ridged and each and every plan must be considered. This is where I used A Directed Acyclic Graph or DAG, which is a tree with no cycles between nodes, to expand the useability but also to reuse tasks that might be needed for multiple goals.<br>                                         
