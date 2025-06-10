@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Advanced AI Project</title>
+		<title>Final Year Dissertation</title>
 		<link rel="icon" type="image/x-icon" href="images/logo.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -20,7 +20,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Advanced AI Project</a></h1>
+						<h1><a href="index.html">Final Year Dissertation</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -64,13 +64,16 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="images/AdvancedAi/Splash.png" target="_blank" class="image"><img src="images/AdvancedAi/Splash.png"  alt="Gif of Final Graphics Project" /></video></a>
+									<a href="images/FYP/DynamicPathfinding.mp4" target="_blank" class="image"><video src="images/FYP/DynamicPathfinding.mp4"  controls width="100%" alt="Video of Final year Project" ></video></a>
 									<div class="content">
 										<h2 class="major">Overview</h2>
-										<p>Advanced AI involved exploring concepts and implementation that could elevate how believable an agent is. This project contained three major sections Chess AI, Squad Behaviour and Goal Oriented Action Planning. 
-											This project demonstrated that AI is less of a fixed solution and can be highly depending on the goal.
+										<p>For my final year dissertation, after loving the level 5 AI module I wanted to explore how an agent navigates a scene in more depth, my level 5 AI used JPS pathfinding which just like A* works on a static environment. Thus, the most optimal path can be found for that snapshot but if the world changes the path might not be viable anymore. In doing some preliminary 2research for this project I came across this ‘AI has changed but the games industry considered the problem of pathfinding solved, rather than spending time to create a new solution the focus is to optimise and build upon A*’ (Bourg & Seamann, 2004) but as my understanding of A* was that it must be recalculated if the path changes is what cemented this topic as my dissertation.
 										<br><br>
 										Grade: First
+										<br><br>
+										Download My Dissertation Here: <a href="files/Harry Watts Undergrad Dissatation.pdf" download target="_blank">Download</a>
+										<br><br>
+										<a href="https://github.com/HarryMadn3ss/Dynamic-Pathfinding" target="_blank">GitHub Repo</a> 	
 										</p>
 
 																			
@@ -80,12 +83,10 @@
 												
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="images/AdvancedAi/chess.mp4" target="_blank" class="image"><video src="images/AdvancedAi/chess.mp4" controls width="100%" alt="Video of Chess AI" ></a>
+									<a href="images/FYP/MazeOneSearch.png" target="_blank" class="image"><img src="images/FYP/MazeOneSearch.png"  alt="Video of Chess AI" ></a>
 									<div class="content">
-										<h2 class="major">Rules of the Game</h2>
-										<p>Chess AI involved a lot of research, identify areas that could be improved upon or scored to make the AI more intelligent. This involve Scoring the board position for each piece, the number of moves the piece could make, number of attacks the piece can make and the global score of whenever a piece is taken. This accompanied with the minmax algorithm, and playbooks the AI opponent is able to look for the best move considering the future possible moves.</p>										
-										<br><br>
-										<p>(I am very bad at chess)</p>
+										<h2 class="major">Reading a Map</h2>
+										<p>This project was not just a deep dive into the world of pathfinding but also challenged me to question what I thought I already knew. The biggest takeaway was that the environment the algorithm is searching is just a s important maybe more so than the algorithm selected. Take figure 1 for instance, it depicts the search A* takes but as is begins its search at the start it immediately gets lost in the dead end leading to the right. Whereas D* Lite which begins the search from the goal to the start didn’t get lost for as long. Timings can be seen in figure 2.</p>
 									</div>
 								</div>
 							</section>
@@ -93,27 +94,13 @@
 						
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="images/AdvancedAi/Zombies.mp4" target="_blank" class="image"><video src="images/AdvancedAi/Zombies.mp4" controls width="100%" alt="Video of Zombies searching for the player with gunshots alerting the zombies" ></a>
+									<a href="images/FYP/MazeOneResults.png" target="_blank" class="image"><img src="images/FYP/MazeOneResults.png" alt="Video of Zombies searching for the player with gunshots alerting the zombies" ></a>
 									<div class="content">
-										<h2 class="major">Working Together</h2>
-										<p>Squad Behaviour was about creating a seemingly interconnected agents that would response to different events. using MARPO (Movement, Avoidance, Routing, Planning and Orders) I created two stacks an idle stack that contained the behaviour for the wandering state, mimicking hunting for the player, and the reactive stack which would always be checked first. The reactive stack will be empty until a behaviour is added for this example there is a ‘spotter’ zombie and three ‘hunter’ zombies, the spotter can see the player from further away and ‘scream’ to alert the other zombies to the last known location of the player, the other way is the zombie sees the player themselves.</p>
-										
+										<h2 class="major">Results</h2>		
+										<p>The timings, presented here, highlights the change from A* being the best rated to worst based on the environment it needs to navigate. Taking a large amount of time to search a non-negotiable path.</p>								
 									</div>
 								</div>
 							</section>
-							
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="images/AdvancedAi/forester.mp4" target="_blank" class="image"><video src="images/AdvancedAi/forester.mp4" controls width="100%" alt="Video of Agents Harvesting Materials to Bulid Houses" ></a>
-									<div class="content">
-										<h2 class="major">Future Planning</h2>
-										<p>GOAP involved creating plans that the agent could execute if the requirements are met. This could be building a house but if the agent doesn’t currently have any wood, then the next step of the plan is looked at which obtains the wood needed. It’s important to note that the plan looks at the final task first and works backwards until a task can be completed. However, this approach can be quite ridged and each and every plan must be considered. This is where I used A Directed Acyclic Graph or DAG, which is a tree with no cycles between nodes, to expand the useability but also to reuse tasks that might be needed for multiple goals.<br>                                         
-									</p>
-										
-									</div>
-								</div>
-							</section>
-							
 					</section>
 
 				<!-- Footer -->
